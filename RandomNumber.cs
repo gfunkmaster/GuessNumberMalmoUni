@@ -19,6 +19,7 @@ namespace GuessNumberMalmoUni
 
             if(done)
             {
+                WelcomeText();
                 GuessNumber();
                 PlayAgain();
             } else
@@ -28,6 +29,24 @@ namespace GuessNumberMalmoUni
                
             }
         }
+
+        private void WelcomeText()
+        {
+            
+          string textI = "---------------- Guess the NUmber --------\n";
+            textI    += "The computer selects a random value between 0 and 99\n ";
+            textI += "You have to guess the numer. The game will help you\n";
+            textI += "by letting you know if the guess number is to high\n";
+            textI += " or  to low! It also displays the number of attepts\n.";
+            textI += "the game stops and you replay.\n";
+            textI += "---------------- Guess the NUmber --------\n";
+
+            Console.WriteLine(textI);
+
+                
+        }      
+       
+
 
         private bool PlayAgain()
         {
